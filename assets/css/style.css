@@ -1,0 +1,102 @@
+:root {
+    --Orange: hsl(26, 100%, 55%);
+    --Pale-orange: hsl(25, 100%, 94%);
+    --Very-vark-blue: hsl(220, 13%, 13%);
+    --Dark-grayish-blue: hsl(219, 9%, 45%);
+    --Grayish-blue: hsl(220, 14%, 75%);
+    --Light-grayish-blue: hsl(223, 64%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --Black: rgba(0, 0, 0, .75);
+}
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header, section, .container, .cont--left, .menu--profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 113px;
+}
+.header .container, .cont--left, .menu--header, .menu--header ul {
+    display: flex;
+    height: 100%;
+}
+.header .container {
+    justify-content: space-between;
+    width: 1110px;
+    border-bottom: 1px solid var(--Grayish-blue);
+}
+.header .container .cont--left {
+    justify-content: space-between;
+    width: 595px;
+}
+.header .container .cont--left .menu--header ul {
+    gap: 30px;
+}
+.header .container .cont--left .menu--header ul li, a {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+.header .container .cont--left .menu--header ul li a {
+    color: var(--Grayish-blue);
+    border-bottom: 4px solid var(--White);
+    height: 100%;
+    align-items: center;
+}
+.header .container .cont--left .menu--header ul li a:hover {
+    border-color: var(--Orange);
+    color: var(--Very-vark-blue);
+}
+
+.header .menu--profile {
+    gap: 45px;
+}
+.header .menu--profile .profile--button img {
+    width: 50px;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+}
+.header .menu--profile .profile--button img:hover {
+    border-color: var(--Orange);
+}
+.header .menu--profile .cart--area .cart--icon:hover svg path {
+    fill: var(--Very-vark-blue);
+}
+.header .menu--profile .cart--area:hover .cart {
+    display: flex;
+}
+.header .menu--profile .cart--area .cart {
+    display: none;
+    position: absolute;
+    width: 360px;
+    height: 260px;
+    background-color: var(--White);
+    box-shadow: 0px 20px 30px var(--Grayish-blue);
+    transform: translate(-220px, 40px);
+    border-radius: 6px;
+}
+.header .menu--profile .cart--area .cart .cart--title {
+    font-size: 16px;
+    font-weight: 700;
+    width: inherit;
+    height: 60px;
+    border-bottom: 1px solid var(--Grayish-blue);
+    padding-left: 20px;
+    line-height: 60px;
+    color: var(--Very-vark-blue);
+}
